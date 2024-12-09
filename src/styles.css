@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.lightMode {
+  background-color: white;
+  color: black;
+}
+.darkMode {
+  background-color: black;
+  color: white;
+}

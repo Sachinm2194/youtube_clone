@@ -1,0 +1,17 @@
+.list-group button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.list-group , .row{
+    border: none;
+
+}
+
+button img{
+    width: 30px;
+    
+}
+

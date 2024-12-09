@@ -1,0 +1,79 @@
+<div class="sidebar"  [ngClass]="colorTheme" >
+    <ul class="list-group list-unstyled  m-3  " >
+        <li class="list-item  d-flex my-auto" [ngClass]="colorTheme" (click)="a()">
+            <img src="{{home}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto" >Home</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{shorts}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Shorts</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{subscription}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Subscription</p>
+        </li>
+    </ul>
+    <hr class="mx-2">
+    <ul class="list-group list-unstyled m-3">
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <p class="item-name my-auto" class="m-2 " id="you"> <b>You > </b></p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{yourChannel}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Your channel</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{history}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">History</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{playlist}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Playlist</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{yourVideos}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Your videos</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{watchLater}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Watch Later</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="{{likedVideos}}" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">Liked videos</p>
+        </li>
+    </ul>
+    <hr class="mx-2">
+
+    <ul class="list-group list-unstyled m-3 " id="Subscription">
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <p class="item-name my-auto" id="subscriptions"> <b>Subscriptions</b></p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+    </ul>
+    <ul class="list-group list-unstyled m-3">
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+        <li class="list-item d-flex" [ngClass]="colorTheme">
+            <img src="../../assets/commonImages/youtubeLogo.svg" alt="" class="sidebarIcons">
+            <p class="item-name my-auto">a1</p>
+        </li>
+    </ul>
+</div>

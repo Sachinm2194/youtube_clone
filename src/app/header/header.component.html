@@ -1,0 +1,96 @@
+<div class="container-fluid navigationbar" [ngClass]="colorTheme">
+  <div class="row h-100 large align-items-center">
+    <div class="col-2 my-auto">
+      <div class="logo d-flex">
+        <div class="YtLogo" id="YtLogo">
+          <button class="toggle-menu mx-3 d-flex align-items-center justify-content-center" (click)="menu()">
+            <img src="{{ menuIcon }}" alt="" class="iconLogo" />
+          </button>
+        </div>
+
+        <img src="{{ brandLogo }}" alt="" class="imageLogo" />
+        <sup class="mb-3" style="font-size: x-small">IN</sup>
+      </div>
+    </div>
+    <div class="col-7 d-flex justify-content-end">
+      <div class="searchBarContainer">
+        <form action="" class="container-fluid h-100">
+          <div class="row h-100 align-items-center">
+            <input
+              type="text "
+              style="height: 100%"
+              class="mx-0 col-10 searchArea"
+              [ngClass]="colorTheme"
+            />
+            <button
+              type="button"
+              class="col-2 h-100 searchButton"
+              [ngClass]="colorTheme"
+            >
+              <img src="{{ searchIcon }}" alt="" width="28px" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="col-3 d-flex justify-content-end align-items-center m-0 p-0"
+      [ngClass]="colorTheme"
+    >
+      <button (click)="themeToggle()">M</button>
+      <div class="btns m-2 dropdown ">
+        <button  [ngClass]="colorTheme" data-bs-toggle="dropdown"  >
+          <img src="{{ createVideo }}" alt="" id="createVideo"/>
+        </button>
+        <div class="dropdown-menu">
+          <div class="dropdown-item">1</div>
+          <div class="dropdown-item">2</div>
+          <div class="dropdown-item">3</div>
+        </div>
+        <button [ngClass]="colorTheme">
+          <img src="{{ bellIcon }}" alt="" id="createVideo"/>
+          
+        </button>
+      </div>
+      <div class="m-2 profile">
+        <button>
+          <img
+            src="../../assets/commonImages/youtubeLogo.svg"
+            alt=""
+            id="profilePicture"
+            class="fuild"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- *********************************************************************************** -->
+  <!-- small screen -->
+  <div class="row h-100 small align-items-center">
+    <div class="col">
+      <div class="logo mx-2">
+        <img src="{{ brandLogo }}" alt="" class="imageLogo" />
+        <sup class="mb-3" style="font-size: x-small">IN</sup>
+      </div>
+    </div>
+    <!-- <div class="col-4">Column B2</div> -->
+    <div class="col d-flex justify-content-end mx-3">
+      <button (click)="themeToggle()">M</button>
+      <button
+        type="button"
+        class="col-2 h-100 smallBellIcon"
+        [ngClass]="colorTheme"
+      >
+        <img src="{{ bellIcon }}" alt="" width="28px" />
+      </button>
+      <button
+        type="button"
+        class="col-2 h-100 smallSearchButton"
+        [ngClass]="colorTheme"
+      >
+        <img src="{{ searchIcon }}" alt="" width="28px" />
+      </button>
+    </div>
+  </div>
+</div>

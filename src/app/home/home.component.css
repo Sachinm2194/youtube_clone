@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+app-header{
+    z-index: 1000;
+}
+.main-body {
+  margin-top: 56px;
+  height: calc(100vh-56px);
+  flex-direction: row;
+  transition: margin-left 0.3s ease;
+}
+
+.half-sidebar {
+  display: inline-block;
+  width: 72px;
+  transition: width 0.3s ease;
+}
+.fullSidebar {
+  width: 240px;
+  transition: width 0.3s ease;
+}
+
+.content {
+  display: inline-block;
+  flex: 1;
+  height: calc(100vh - 56px);
+  transition: margin-left 0.3s ease;
+}
+
+.list-item {
+  width: 100%;
+  border: 1px solid black;
+  height: 76px;
+}
+
+.list-item:hover {
+  border: 1px solid black;
+  border-radius: 15px;
+  /* background-color: black; */
+}
+
+.list-item img {
+  width: 24px;
+  height: 24px;
+}
+.iconName {
+  font-size: 10px;
+}
+
+.lightMode .list-item:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.darkMode .list-item:hover {
+  background-color: rgb(42, 41, 41);
+}
+
+@media (max-width: 660px) {
+  .half-sidebar,
+  .fullSidebar {
+    display: none;
+  }
+}
+
+.footer-sidebar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  /* border-top: 1px solid black;  */
+}
+
+.lightMode .footer-sidebar {
+  background-color: rgb(237, 237, 237);
+}
+
+.darkMode .footer-sidebar {
+  background-color: rgb(42, 41, 41);
+}
+
+@media (min-width: 661px) {
+  .footer-sidebar {
+    display: none;
+  }
+}
+
+
+.container-fluid .videos {
+  display: grid;
+  grid-gap: 1em;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.thumbnail-video {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 1;
+  
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Video part */
+
+.container-fluid .videos .video{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sound-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    z-index: 2;
+    border-radius: 50%;
+  }
+  
+  .thumbnail:hover .sound-button {
+    display: block; /* Show on hover */
+  }
+
+  
+  
+  .thumbnail-video:hover {
+    /* Targeting the iframe when it's hovered to autoplay */
+    pointer-events: none;
+  }
+
+@media (max-width:619px) {
+    .thumbnail-video {
+        height: 250px;
+        
+      }
+}
+
+
+@media (max-width: 1379px) {
+  .main-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: 72px;
+  }
+}
+
+@media (max-width: 660px) {
+  .content {
+    margin-left: 0px;
+  }
+  .container-fluid  .videos {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+  .main-body {
+    display: flex;
+    flex-direction: row;
+  }
+}

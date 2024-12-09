@@ -1,0 +1,85 @@
+.sidebar{
+    width: 240px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    /* border: 1px solid black; */
+    overflow-y:scroll;
+}
+
+.sidebarIcons{
+    margin: 8px;
+    width: 24px;
+    height: 25px;
+    /* border: 1px solid black; */
+    /* padding-left: 0px; */
+    margin-left: 0px;
+}
+.list-item{
+    height: 40px;
+    /* border: 1px solid black;   */
+    padding: 0px;  
+    
+}
+.list-item img{
+    margin-left: 5px;
+    padding: 0px;
+}
+
+.item-name{
+    margin-left: 10px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.list-item:hover{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lightMode .list-item:hover{
+    background-color: rgb(237, 237, 237);
+
+}
+
+.darkMode .list-item:hover{
+    background-color: rgb(42, 41, 41);
+
+}
+
+/* ////////////////// */
+
+.sidebar::-webkit-scrollbar {
+    width: 0px; /* Smaller scrollbar width */
+    /* display: none; */
+}
+.sidebar:hover::-webkit-scrollbar {
+    width: 8px; /* Display scrollbar on hover */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(110, 110, 110); /* Light mode scrollbar color */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+    /* display: none; */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(150, 150, 150); /* Hover state */
+}
+
+/* Scrollbar styling for dark mode */
+.darkMode .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(100, 100, 100); /* Dark mode scrollbar color */
+}
+
+.darkMode .sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(70, 70, 70); /* Dark mod  e hover state */
+}
+
+/* Adjust scrollbar track if needed */
+.sidebar::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparent scrollbar track */
+}
+#subscriptions ,#you{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#subscription .list-item img{
+    border-radius: 50%;
+}

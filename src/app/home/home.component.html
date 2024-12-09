@@ -1,0 +1,209 @@
+<div class="container-fluid m-0 p-0 home-main-container" [ngClass]="colorTheme">
+  <div class="header row">
+    <app-header></app-header>
+  </div>
+  <div class="main-body row d-flex" [ngClass]="colorTheme">
+    @if (fullSidebar===false) {
+    <app-half-sidebar class="half-sidebar"></app-half-sidebar>
+    } @else{
+    <app-sidebar class="fullSidebar"></app-sidebar>
+    }
+    <div class="content">
+      <div class="container-fluid">
+        <div class="videos ">
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="../../assets/commonImages/vid1.mp4" class=" w-100 thumbnail-video fluid "  onmouseover="this.play()" onmouseout="this.pause()"></video>
+              <button class="sound-button" (click)="toggleSound($event)"
+              >
+                🔊
+              </button>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title 1</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div><div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div><div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <div class="video border">
+            <div class="thumbnail">
+              <video src="" class=" w-100 thumbnail-video"></video>
+            </div> 
+            <div class="body ">
+              <div class="row">
+                <div class="col-2 border channel-icon">
+w
+                </div>
+                <div class="col-10 border">
+                  <p class="video-title">video title</p>
+                  <p class="channel-name">Channel name</p>
+                  <div class="container-fluid view-time d-flex">
+                    <p class="view">View</p>
+                    <p class="time">Time</p>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          
+          <!-- Add more video elements as needed -->
+        </div>
+      </div>
+
+      <div class="footer-sidebar" [ngClass]="colorTheme">
+        <app-footer-sidebar
+          class="footer-sidebar"
+          [ngClass]="colorTheme"
+        ></app-footer-sidebar>
+      </div>
+    </div>
+  </div>
+</div>

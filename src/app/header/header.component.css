@@ -1,0 +1,198 @@
+.navigationbar {
+  height: 56px;
+  padding: 0px;
+  position: fixed;
+}
+
+@media (max-width: 660px) {
+  .navigationbar {
+    height: 48px;
+  }
+  .large {
+    display: none;
+  }
+}
+
+@media (min-width: 661px) {
+  .navigationbar {
+    height: 56px;
+    padding: 0px;
+  }
+  .small {
+    display: none;
+  }
+}
+
+.logo {
+  width: 100px; /* Increase the width if needed */
+  height: 50px; /* Increase the height if needed */
+  display: flex; /* Use flex to align children better */
+  align-items: center;
+}
+
+.imageLogo {
+  width: 100%; /* Ensure the image fills the logo container */
+  height: auto; /* Maintain aspect ratio */
+  background-color: transparent;
+}
+
+.toggle-menu {
+  border: none;
+  background-color: transparent;
+  width: 40px; /* Increase the width of the toggle menu button */
+  height: 40px; /* Set the height to match the button size */
+}
+
+.large .imageLogo {
+  width: 100%; /* Ensure it fills the parent container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.small .imageLogo {
+  width: 100%;
+  height: auto;
+}
+.iconLogo {
+  width: 20px;
+}
+
+.YtLogo :hover {
+  border-radius: 50%;
+  /* background-color: red; */
+}
+
+.toggle-menu :hover {
+  border-radius: 0%;
+}
+
+.lightMode .YtLogo .toggle-menu:hover {
+  background-color: rgb(237, 237, 237);
+}
+.darkMode .YtLogo .toggle-menu:hover {
+  background-color: rgb(42, 41, 41);
+}
+.searchBarContainer {
+  height: 40px;
+  width: 70%;
+  /* margin-left: 180px; */
+  margin-right: 10%;
+}
+.searchBarContainer .searchArea {
+  /* border: 1px solid red !important; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.searchButton {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px;
+}
+.darkMode .searchArea {
+  border: 1px solid rgb(43, 43, 43) !important;
+}
+.darkMode .searchButton {
+  /* border: none; */
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgb(43, 43, 43) !important;
+}
+.lightMode .searchArea {
+  border: 1px solid rgb(169, 168, 168) !important;
+}
+.lightMode .searchButton {
+  border: 1px solid rgb(169, 168, 168) !important;
+}
+
+.btns button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+.profile button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  margin-right: 20px;
+  border-radius: 50%;
+
+  background-color: aqua;
+}
+
+/* Ensure the profile container has proper spacing and alignment */
+.profile {
+  display: flex; /* Use flexbox for easy centering */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  margin: 2px; /* Add margin as specified */
+}
+
+/* Style for the button to remove default styling and fit the image */
+.profile button {
+  border: none; /* Remove default border */
+  padding: 0; /* Remove padding */
+  background: aqua; /* Make button background transparent */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex; /* Flexbox to center image inside button */
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+}
+
+/* Ensure the image fits well inside the button */
+#profilePicture {
+  height: 100%; /* Make image height responsive */
+  width: auto; /* Maintain aspect ratio */
+  max-height: 40px; /* Limit max height if needed */
+  max-width: 100%; /* Ensure image doesn't overflow button */
+  object-fit: contain; /* Ensure the image fits within its container */
+}
+
+/* Optional: add styling to handle hover effects */
+.profile button:hover {
+  opacity: 0.9; /* Slightly change opacity on hover */
+}
+
+.lightMode .btns button:hover {
+  background-color: rgb(237, 237, 237);
+}
+.darkMode .btns button:hover {
+  background-color: rgb(42, 41, 41);
+}
+@media (max-width: 875px) {
+  .btns button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .profile button {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #profilePicture {
+    max-height: 30px;
+  }
+}
+.smallSearchButton {
+  width: 40px;
+  height: 30px;
+  border: none;
+}
+
+.smallBellIcon {
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-right: 15px;
+}
+#createVideo{
+    width: 30px;
+    height: 25px;    
+    object-fit: contain;
+}

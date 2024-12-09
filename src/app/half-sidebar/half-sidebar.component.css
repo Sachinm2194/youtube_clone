@@ -1,0 +1,44 @@
+.half-sidebar{
+    /* height: 100vh; */
+    display: inline-block;
+    width: 72px;
+    height: calc(100vh - 56px);
+    /* height: calc(100vh - 56px); */
+    padding: 4px;
+    position: fixed;
+
+}
+.list-item{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 76px;
+    padding-top: 10px;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.list-item:hover{
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    /* background-color: black; */
+}
+
+.list-item img{
+    width: 24px;
+    height: 24px;
+}
+.iconName{
+    font-size: 10px;
+    font-weight:600;
+}
+
+.lightMode.list-item:hover{
+    background-color: rgb(237, 237, 237);
+
+}
+
+.darkMode.list-item:hover{
+    background-color: rgb(42, 41, 41);
+
+}
